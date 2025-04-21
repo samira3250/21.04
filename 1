@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    char letter = 'z';
+    int index = -1;
+
+    if (letter >= 'a' && letter <= 'z') {
+        index = letter - 'a' + 1;
+        printf("Буква '%c' находится на позиции %d в алфавите\n", letter, index);
+    } else {
+        printf("Буква '%c' не является маленькой буквой английского алфавита\n", letter);
+    }
+
+    return 0;
+}
